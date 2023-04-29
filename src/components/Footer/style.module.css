@@ -1,10 +1,14 @@
 .footer{
     text-align: center;
-    background-color: white;
 }
 
 .textname{
     font-size: 16px;
     font-weight: 500;
     line-height: 25px;
+}
+.footer-item {
+    font-size: 16px;
+    font-weight: 600;
+    color: #A3A3A3;
 }
