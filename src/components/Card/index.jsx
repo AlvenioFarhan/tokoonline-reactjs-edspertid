@@ -1,65 +1,14 @@
 import {Card, Button, Row, Col} from 'react-bootstrap';
-import style from './style.module.css';
-import contoh from '../../assets/Image/contoh1.svg';
+import style from './card.css';
+import contoh from '../../assets/Image/sggrey.jpg';
+import data from '../../assets/data';
 
 function card() {
-
-  const listProduct = [
-    {
-      'hewan' : 'Sugar Glider',
-      'jenis' : 'Classic Grey',
-      'sex'   : 'Jantan',
-      'age'   : '2 Month'
-      },
-    {
-      'hewan' : 'Sugar Glider',
-      'jenis' : 'White Face',
-      'sex'   : 'Jantan',
-      'age'   : '7 Month'
-      },
-    {
-      'hewan' : 'Sugar Glider',
-      'jenis' : 'Leucistic',
-      'sex'   : 'Jantan',
-      'age'   : '9 Month'
-      },
-    {
-    'hewan' : 'Sugar Glider',
-    'jenis' : 'Creamino',
-    'sex'   : 'Betina',
-    'age'   : '2 Month'
-     },
-    { 
-    'hewan' : 'Sugar Glider',
-    'jenis' : 'Classic Grey',
-    'sex'   : 'Jantan',
-    'age'   : '2 Month'
-     },
-    {
-    'hewan' : 'Sugar Glider',
-    'jenis' : 'White Face',
-    'sex'   : 'Jantan',
-    'age'   : '7 Month'
-     },
-    {
-    'hewan' : 'Sugar Glider',
-    'jenis' : 'Leucistic',
-    'sex'   : 'Jantan',
-    'age'   : '9 Month'
-      },
-    {
-    'hewan' : 'Sugar Glider',
-    'jenis' : 'Creamino',
-    'sex'   : 'Betina',
-    'age'   : '2 Month'
-      },
-
-];
 
   return (
     <>
     <Row>{
-      listProduct.map((item,index) => {
+      data.map((item,index) => {
         return(
         <Col sm="3" key={index}>
         <Card className={ style.card }>
