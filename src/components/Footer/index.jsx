@@ -1,22 +1,18 @@
-import Card from 'react-bootstrap/Card';
-import contoh2 from '../../assets/Image/contoh2.svg';
-import style from './style.module.css';
+import {Container, Row, Col} from 'react-bootstrap';
 
 
-function ImageAndTextExample() {
+function Footer() {
   return (
     <>
-      <br />
-      <Card>
-        <Card.Body>
-          <Card.Text className={style.footer}>
-            Ini adalah Contoh Footer
-          </Card.Text>
-        </Card.Body>
-        <Card.Img variant="bottom" src={contoh2} />
-      </Card>
+      <Container>
+      <Row>
+            <Col sm="12" className="textname">
+              <p>© {new Date().getFullYear()} | Alvenio </p>
+            </Col>
+          </Row>
+      </Container>
     </>
   );
 }
 
-export default ImageAndTextExample;
+export default Footer;

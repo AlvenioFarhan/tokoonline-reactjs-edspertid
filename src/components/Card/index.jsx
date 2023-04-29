@@ -1,5 +1,5 @@
 import {Card, Button, Row, Col} from 'react-bootstrap';
-import style from './card.css';
+import style from './style.module.css';
 import contoh from '../../assets/Image/sggrey.jpg';
 import data from '../../assets/data';
 
